@@ -1,18 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.less';
-import superagent from 'superagent';
 
 class App extends Component {
-
-  componentDidMount() {
-    // console.log(superagent);
-    superagent
-    .post('https://luntzglobal-backend-cr.herokuapp.com/api/v1.0/write/participant/enterpin')
-    .set('Content-Type', 'application/json')
-    .send('{"pin": "VCMOAP"}')
-    .then(data => console.log(data.body), err => console.log(err.body))
-  }
 
   render() {
     return (
