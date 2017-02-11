@@ -6,5 +6,6 @@ module.exports = {
     'build/static/**/!(*map*)'
   ],
   dontCacheBustUrlsMatching: /\.\w{8}\./,
+  navigateFallback: 'index.html',
   swFilePath: 'build/service-worker.js'
 };
